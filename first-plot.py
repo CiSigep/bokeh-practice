@@ -1,0 +1,14 @@
+from bokeh.plotting import figure
+from bokeh.io import output_file, show
+
+# coordinates
+x = [1, 2, 3, 4, 5]
+y = [6, 7, 8, 9, 10]
+
+output_file("line.html")
+
+f = figure()
+
+f.line(x, y)
+
+show(f)
